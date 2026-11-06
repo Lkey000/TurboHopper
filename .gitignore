@@ -1,0 +1,32 @@
+# Gradle
+.gradle/
+build/
+
+# Minecraft run directories
+run/
+run-data/
+runs/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+eclipse/
+bin/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / crash reports
+*.log
+hs_err_pid*
+
+# Generated resources (keep committed data/assets under src/main/resources only)
+src/generated/resources/.cache/

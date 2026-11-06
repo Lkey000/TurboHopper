@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.turbohopper.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "turbohopper.refmap.json",
+  "mixins": [
+    "HopperStateMixin",
+    "DispenserStateMixin",
+    "HopperCooldownMixin",
+    "RandomizableContainerMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

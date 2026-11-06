@@ -1,0 +1,41 @@
+# Turbo Hopper - mods.toml
+# Version, name, license and authors are filled in from gradle.properties at build time.
+
+modLoader="javafml"
+loaderVersion="[47,)"
+license="${mod_license}"
+
+# Where players should report problems
+issueTrackerURL="https://github.com/Lkey000/TurboHopper/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+displayURL="https://github.com/Lkey000/TurboHopper"
+logoFile="logo.png"
+authors="${mod_authors}"
+description='''
+Makes hoppers and droppers faster, with a toggle button in their GUI.
+
+Hopper: switch between Normal and Fast transfer speed.
+Dropper: switch between Normal (redstone) and Instant mode.
+In Instant mode, a dropper keeps ejecting items while it has any, without a redstone signal,
+and resumes automatically when the target container has free space.
+
+Required on both the client and the server.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
